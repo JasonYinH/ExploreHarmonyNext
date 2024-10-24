@@ -18,7 +18,8 @@
 
 ![img.png](pic/img.png)
 
-
+#### 开源协议
+本项目基于 [Apache License](https://gitee.com/jiaojiaoone/explore-harmony-next/blob/master/LICENSE.txt) ，请自由地享受和参与开源。
 
 ## 源码
 
