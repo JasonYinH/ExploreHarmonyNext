@@ -26,8 +26,8 @@
   },
   "modules": [
     {
-      "name": "entry",
-      "srcPath": "./products/entry",
+      "name": "phone",
+      "srcPath": "./products/phone",
       "targets": [
         {
           "name": "default",
@@ -36,6 +36,26 @@
           ]
         }
       ]
+    },
+    {
+      "name": "wechat",
+      "srcPath": "./features/wechat",
+    },
+    {
+      "name": "find",
+      "srcPath": "./features/find",
+    },
+    {
+      "name": "mine",
+      "srcPath": "./features/mine",
+    },
+    {
+      "name": "login",
+      "srcPath": "./features/login",
+    },
+    {
+      "name": "contacts",
+      "srcPath": "./features/contacts",
     }
   ]
 }
