@@ -26,6 +26,10 @@
 - gitee：https://gitee.com/jiaojiaoone/explore-harmony-next.git
 - github：https://github.com/JasonYinH/ExploreHarmonyNext.git
 
+## 博客地址
+
+- https://juejin.cn/user/1151943919282350
+
 ## 交流
 
 使用有疑问或建议， **请提交issue（这样可以统一收集问题，方便更多人查阅，另外会也第一时间回复处理）** ，或者(+v: yinshiyuba)。
