@@ -5,5 +5,9 @@
   "main": "Index.ets",
   "author": "",
   "license": "Apache-2.0",
-  "dependencies": {}
+  "dependencies": {
+    "network": 'file:../../commons/network',
+    "uicomponents": 'file:../../commons/uicomponents',
+    "utils": 'file:../../commons/utils'
+  }
 }

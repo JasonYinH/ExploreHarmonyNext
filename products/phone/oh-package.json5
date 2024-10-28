@@ -10,6 +10,9 @@
     "wechat": "file:../../features/wechat",
     "contacts": "file:../../features/contacts",
     "find": "file:../../features/find",
-    "mine": "file:../../features/mine"
+    "mine": "file:../../features/mine",
+    "network": 'file:../../commons/network',
+    "uicomponents": 'file:../../commons/uicomponents',
+    "utils": 'file:../../commons/utils'
   }
 }

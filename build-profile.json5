@@ -56,6 +56,18 @@
     {
       "name": "contacts",
       "srcPath": "./features/contacts",
+    },
+    {
+      "name": "network",
+      "srcPath": "./commons/network",
+    },
+    {
+      "name": "uicomponents",
+      "srcPath": "./commons/uicomponents",
+    },
+    {
+      "name": "utils",
+      "srcPath": "./commons/utils",
     }
   ]
 }

@@ -2,6 +2,10 @@
   "modelVersion": "5.0.0",
   "description": "Please describe the basic information.",
   "dependencies": {
+    // 本地依赖
+    "@hzw/zrouter": "file:libs/RouterApi.har",
+    // 远程依赖
+    // "@hzw/zrouter": "^1.0.7"
   },
   "devDependencies": {
     "@ohos/hypium": "1.0.19",
