@@ -39,8 +39,9 @@
 - github：https://github.com/JasonYinH/ExploreHarmonyNext.git
 
 ## 博客地址
+- csdn：https://blog.csdn.net/qq_40533422?type=blog
+- juejin: https://juejin.cn/user/1151943919282350
 
-- https://juejin.cn/user/1151943919282350
 
 ## 交流
 
