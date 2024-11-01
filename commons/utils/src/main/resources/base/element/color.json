@@ -1,0 +1,144 @@
+{
+  "color": [
+    {
+      "name": "colorPrimary",
+      "value": "#5090F1"
+    },
+    {
+      "name": "colorShallow",
+      "value": "#CADDFA"
+    },
+    {
+      "name": "color80Colour",
+      "value": "#805090F1"
+    },
+    {
+      "name": "colorBorder",
+      "value": "#A7C7F8"
+    },
+    {
+      "name": "colorSide",
+      "value": "#EDF3FD"
+    },
+    {
+      "name": "white",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "black",
+      "value": "#000000"
+    },
+    {
+      "name": "color_222222",
+      "value": "#222222"
+    },
+    {
+      "name": "color_999999",
+      "value": "#999999"
+    },
+    {
+      "name": "color_F0F0F0",
+      "value": "#F0F0F0"
+    },
+    {
+      "name": "color_666666",
+      "value": "#666666"
+    },
+    {
+      "name": "color_F6EAD0",
+      "value": "#F6EAD0"
+    },
+    {
+      "name": "color_544B2D",
+      "value": "#544B2D"
+    },
+    {
+      "name": "color_FEDB9B",
+      "value": "#FEDB9B"
+    },
+    {
+      "name": "color_E65441",
+      "value": "#E65441"
+    },
+    {
+      "name": "color_FCEDEC",
+      "value": "#FCEDEC"
+    },
+    {
+      "name": "color_505050",
+      "value": "#505050"
+    },
+    {
+      "name": "color_DADCDF",
+      "value": "#DADCDF"
+    },
+    {
+      "name": "color_FCF4E6",
+      "value": "#FCF4E6"
+    },
+    {
+      "name": "color_E6960C",
+      "value": "#E6960C"
+    },
+    {
+      "name": "color_F7DFB6",
+      "value": "#F7DFB6"
+    },
+    {
+      "name": "color_F2F3F7",
+      "value": "#F2F3F7"
+    },
+    {
+      "name": "color_E3E3E3",
+      "value": "#E3E3E3"
+    },
+    {
+      "name": "color_565656",
+      "value": "#565656"
+    },
+    {
+      "name": "color_CC222222",
+      "value": "#CC222222"
+    },
+    {
+      "name": "color_4D000000",
+      "value": "#4D000000"
+    },
+    {
+      "name": "color_9975E5",
+      "value": "#9975E5"
+    },
+    {
+      "name": "color_FFE6960C",
+      "value": "#FFE6960C"
+    },
+    {
+      "name": "color_0BB746",
+      "value": "#0BB746"
+    },
+    {
+      "name": "color_DDDDDD",
+      "value": "#DDDDDD"
+    },
+    {
+      "name": "color_FA2A2D",
+      "value": "#FA2A2D"
+    },
+    {
+      "name": "color_8A000000",
+      "value": "#8A000000"
+    },
+    {
+      "name": "color_EEF2F9",
+      "value": "#EEF2F9"
+    },
+    {
+      "name": "color_A6B0BC",
+      "value": "#A6B0BC"
+    },
+    {
+      "name": "color_FF222222",
+      "value": "#FF222222"
+    }
+  ]
+}

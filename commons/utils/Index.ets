@@ -1,1 +1,1 @@
-export { MainPage } from './src/main/ets/components/MainPage'
+export { CommonConst } from './src/main/ets/common/CommonConst'

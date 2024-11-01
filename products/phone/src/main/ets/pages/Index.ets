@@ -1,5 +1,6 @@
-// import { TestOne } from 'wechat/src/main/ets/components/TestOne';
-import { TestOne } from 'wechat';
+
+import { CommonConst } from 'utils';
+import { MainPage } from './MainPage';
 
 @Entry
 @ComponentV2
@@ -7,22 +8,10 @@ struct Index {
   @Local message: string = '探索 HarmonyOS NEXT(5.0)';
 
   build() {
-    RelativeContainer() {
-      Text(this.message)
-        .id('text1')
-        .fontSize(10)
-        .fontWeight(FontWeight.Bold)
-        .alignRules({
-          center: { anchor: '__container__', align: VerticalAlign.Center },
-          middle: { anchor: '__container__', align: HorizontalAlign.Center }
-        })
-     // 调用模块wechat的TestOne
-           TestOne()
+    Column() {
+      MainPage()
+    }.width(CommonConst.FULL_PARENT)
+    .height(CommonConst.FULL_PARENT)
 
-
-
-    }
-    .height('100%')
-    .width('100%')
   }
 }

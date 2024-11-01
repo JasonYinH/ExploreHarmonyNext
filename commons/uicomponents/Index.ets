@@ -1,1 +1,1 @@
-export { MainPage } from './src/main/ets/components/MainPage'
+export { TabModel } from './src/main/ets/model/TabModel'

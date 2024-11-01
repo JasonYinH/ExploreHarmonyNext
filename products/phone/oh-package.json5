@@ -7,9 +7,9 @@
   "license": "",
   "dependencies": {
     // 本地源码引入，可引入本地其他模块的源码
-    "wechat": "file:../../features/wechat",
-    "contacts": "file:../../features/contacts",
-    "find": "file:../../features/find",
+    "home": "file:../../features/home",
+    "question": "file:../../features/question",
+    "scheme": "file:../../features/scheme",
     "mine": "file:../../features/mine",
     "network": 'file:../../commons/network',
     "uicomponents": 'file:../../commons/uicomponents',

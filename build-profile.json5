@@ -38,12 +38,12 @@
       ]
     },
     {
-      "name": "wechat",
-      "srcPath": "./features/wechat",
+      "name": "home",
+      "srcPath": "./features/home"
     },
     {
-      "name": "find",
-      "srcPath": "./features/find",
+      "name": "scheme",
+      "srcPath": "./features/scheme"
     },
     {
       "name": "mine",
@@ -54,8 +54,8 @@
       "srcPath": "./features/login",
     },
     {
-      "name": "contacts",
-      "srcPath": "./features/contacts",
+      "name": "question",
+      "srcPath": "./features/question"
     },
     {
       "name": "network",
