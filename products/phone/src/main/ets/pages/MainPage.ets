@@ -1,9 +1,10 @@
+import { Route, ZRouter } from "@hzw/zrouter"
 import { HomeView } from "home"
 import { MineView } from "mine"
 import { QuestionView } from "question"
 import { SchemeView } from "scheme"
 import { TabModel } from "uicomponents"
-import { CommonConst } from "utils"
+import { CommonConst, NavName } from "utils"
 import { tabBarModel } from "../model/MainModel"
 
 /**
@@ -12,32 +13,39 @@ import { tabBarModel } from "../model/MainModel"
  */
 @Preview
 @ComponentV2
+@Route({ name: NavName.MAIN_PAGE })
 export struct MainPage {
   @Local selectedIndex: number = 0 // 当前选中的tab下标
   @Local msgCount: number = 9 // 消息数量
   //存储页面状态
   @Local tabContentArr: boolean[] = [true, false, false, false]
+  aboutToAppear(): void {
+    console.log(`xxx ： ---` + 'MainPage')
+    console.log(`xxx获取参数 ： ---` + ZRouter.getInstance().getParamByName(NavName.MAIN_PAGE))
 
+  }
   build() {
-    Stack() {
-      Tabs({ index: this.selectedIndex, barPosition: BarPosition.End }) {
-        ForEach(tabBarModel, (item: TabModel, index: number) => {
-          TabContent() {
-            if (this.selectedIndex === index || this.tabContentArr[index]) {
-              this.tabContentBuilder(item)
-            }
-          }.tabBar(this.tabBottom(tabBarModel[item.index], item.index))
-        }, (item: string) => item)
+    NavDestination() {
+      Stack() {
+        Tabs({ index: this.selectedIndex, barPosition: BarPosition.End }) {
+          ForEach(tabBarModel, (item: TabModel, index: number) => {
+            TabContent() {
+              if (this.selectedIndex === index || this.tabContentArr[index]) {
+                this.tabContentBuilder(item)
+              }
+            }.tabBar(this.tabBottom(tabBarModel[item.index], item.index))
+          }, (item: string) => item)
 
-      }.barWidth(CommonConst.FULL_PARENT)
-      .barHeight(56) //设置导航栏高度
-      .scrollable(false) // 禁止左右滑动
-      .onChange((index: number) => {
-        this.selectedIndex = index;
-        this.tabContentArr[index] = true;
-      })
-    }.width(CommonConst.FULL_PARENT)
-    .height(CommonConst.FULL_PARENT)
+        }.barWidth(CommonConst.FULL_PARENT)
+        .barHeight(56) //设置导航栏高度
+        .scrollable(false) // 禁止左右滑动
+        .onChange((index: number) => {
+          this.selectedIndex = index;
+          this.tabContentArr[index] = true;
+        })
+      }.width(CommonConst.FULL_PARENT)
+      .height(CommonConst.FULL_PARENT)
+    }
 
   }
 

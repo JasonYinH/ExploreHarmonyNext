@@ -1,3 +1,6 @@
+import { Route } from "@hzw/zrouter"
+import { NavName } from "utils"
+
 @Preview
 @ComponentV2
 export struct HomeView {
@@ -7,8 +10,11 @@ export struct HomeView {
   }
 
   build() {
-    Column() {
-      Text('HomeView')
+    NavDestination(){
+      Column() {
+        Text('HomeView')
+      }
     }
+
   }
 }

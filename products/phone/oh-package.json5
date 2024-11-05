@@ -7,6 +7,7 @@
   "license": "",
   "dependencies": {
     // 本地源码引入，可引入本地其他模块的源码
+    "login": 'file:../../features/login',
     "home": "file:../../features/home",
     "question": "file:../../features/question",
     "scheme": "file:../../features/scheme",

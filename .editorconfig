@@ -1,0 +1,29 @@
+# http://editorconfig.org
+# 定义该文件为EditorConfig的根文件，确保所有子文件夹中的文件都遵循相同的设置
+# 顶级配置
+root = true
+# 适用于所有文件的通用配置
+[*]
+# 指定使用空格进行缩进，而非制表符，以保持代码的一致性
+indent_style = space
+# 指定缩进的空格数为2，用于提高代码的可读性
+indent_size = 2
+# 指定字符编码为UTF-8，确保文件在不同系统间传输时不会出现编码问题
+charset = utf-8
+# 指定行尾字符为LF，适用于Unix/Linux系统，确保跨平台的行结束符一致性
+end_of_line = lf
+# 自动去除行尾的多余空格，减少不必要的空白行，保持代码整洁
+trim_trailing_whitespace = true
+# 在文件末尾自动添加一个新行，使得文件的结尾更加清晰
+insert_final_newline = true
+# 一行最大达到多少字符后自动换行
+max_line_length = 200
+# 针对特定文件类型的特殊配置
+[*.{json}]
+# 对于JSON、YAML文件，将缩进空格数设置为2，以符合这些文件通常的缩进标准
+indent_size = 2
+[*.md]
+# 对于Markdown文件，不自动在文件末尾添加新行，以保留可能的空白行用于格式化
+insert_final_newline = false
+# 对于Markdown文件，不自动去除行尾的空格，因为这可能会影响代码块的格式
+trim_trailing_whitespace = false

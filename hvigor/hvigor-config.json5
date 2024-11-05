@@ -1,10 +1,8 @@
 {
   "modelVersion": "5.0.0",
   "dependencies": {
-    // 本地依赖
-    "router-register-plugin":"file:../plugins/router-register-plugin-1.0.9.tgz"
     // 远程依赖
-    // "router-register-plugin":"1.0.9"
+     "router-register-plugin":"1.1.1"
 
   },
   "execution": {
