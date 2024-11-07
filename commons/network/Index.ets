@@ -1,1 +1,1 @@
-export { MainPage } from './src/main/ets/components/MainPage'
+export { ResponseInterceptor } from './src/main/ets/rcp/ResponseInterceptor'
