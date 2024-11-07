@@ -1,5 +1,5 @@
 import { ZRouter } from '@hzw/zrouter';
-import { CommonConst } from 'utils';
+import { CommonConst, NavName } from 'utils';
 import { OhosSmartDialog } from 'ohos_smart_dialog';
 
 /**

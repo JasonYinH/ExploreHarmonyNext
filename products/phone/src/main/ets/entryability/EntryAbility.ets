@@ -61,6 +61,7 @@ export default class EntryAbility extends UIAbility {
       .enableLogInterceptor()//设置为false即可关闭
       .setLoadingContent('正在加载中...')//更改loading文本
       .disableLoading()
+      .setTimeOut({transferMs:100})//设置超时
       .convertError(true)//表示如果response.toJSON()异常时将响应字符串返回,false则表示值返回异常提醒而不返回结果
       .addCommonHeaders({//设置公共头
         "version": `V1.0.0`
@@ -68,7 +69,7 @@ export default class EntryAbility extends UIAbility {
       .addCustomInterceptors([new ResponseInterceptor()])
       .addSysCodeEvent({//添加统一系统框架级别编码处理逻辑,如超时等
         listener: (code: number) => {
-          // Log.d('---------addSysCodeEvent监听事件-----' + code)
+          console.log ('---------addSysCodeEvent监听事件-----' + code)
           switch (code) {
             case -1001:
             case 401:
