@@ -57,7 +57,7 @@
 ## 博客地址
 
 - csdn：https://blog.csdn.net/qq_40533422?type=blog
-- juejin: https://juejin.cn/user/1151943919282350
+- juejin: https://juejin.cn/user/1151943919282350/posts
 
 ## 交流
 
