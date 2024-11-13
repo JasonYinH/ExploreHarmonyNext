@@ -1,9 +1,9 @@
 **当前适配版本为 5.0.0(12)**
 
 ## 环境
-
-- DevEco Studio 5.0.0 Release
-    - Build Version: 5.0.3.906
+- [点击下载最新IDE](https://developer.huawei.com/consumer/cn/download/)
+- DevEco Studio 5.0.1 Beta3
+    - Build Version: 5.0.5.200, built on November 9, 2024
 - Harmony OS Api 5.0.0(12)
 - hvigor 5.0.0
 
