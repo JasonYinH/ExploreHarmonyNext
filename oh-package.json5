@@ -2,13 +2,13 @@
   "modelVersion": "5.0.0",
   "description": "Please describe the basic information.",
   "dependencies": {
-    "@hzw/zrouter": "^1.0.10",
+    "@hzw/zrouter": "^1.1.0",
     "@yunkss/ef_core": "^1.0.3",
     "@yunkss/ef_json": "^1.0.2",
     "@yunkss/ef_rcp": "^1.0.7",
     "@yunkss/ef_ui": "^1.0.0",
     "@zhongrui/pull_to_refresh_v2": "^2.0.1",
-    "ohos_smart_dialog": "^1.6.1"
+    "ohos_smart_dialog": "^1.6.2"
   },
   "devDependencies": {
     "@ohos/hypium": "1.0.19",
