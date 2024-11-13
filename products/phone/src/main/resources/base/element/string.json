@@ -9,10 +9,6 @@
       "value": "description"
     },
     {
-      "name": "EntryAbility_label",
-      "value": "玩安卓"
-    },
-    {
       "name": "internet_reason",
       "value": "请求网络数据"
     }
