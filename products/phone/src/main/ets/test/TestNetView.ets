@@ -3,6 +3,7 @@ import json from '@ohos.util.json';
 import { PhoneService } from '../service/PhoneService';
 import { ToastUtil } from '@yunkss/ef_ui';
 import { OhosSmartDialog, SmartDialog } from 'ohos_smart_dialog';
+import { loadingNetView } from 'uicomponents';
 
 @Preview
 @Route({ name: 'TestNetView', description: "网络页" })
@@ -21,15 +22,19 @@ export struct TestNetView {
   build() {
     NavDestination() {
 
-      Column() {
-        Text("SmartDialog").onClick(() => {
-          // SmartDialog.showLoading()
+      Column({ space: 15 }) {
+        Text("开启loading").onClick(() => {
+          SmartDialog.showLoading()
+          setTimeout(() => {
+            // "关闭loading"
+            SmartDialog.dismiss()
+          }, 3000)
         })
-        // Text('点我啊\n'+this.message)
-        Text('点我啊\n'/*+json.stringify(loginModel.result)*/)
+        Text("网络使用的loading布局")
+        loadingNetView()
+        Text('POST请求\n')
           .fontSize(20)
           .fontWeight(FontWeight.Bold).onClick(async () => {
-          SmartDialog.showLoading()
           //登录
           let login = await PhoneService.login({
             'username': '鸿蒙',
@@ -43,7 +48,6 @@ export struct TestNetView {
             console.log('xxx--' + login.data?.getMsg())
             ToastUtil.showToast(login.data?.getMsg())
           }
-          // SmartDialog.dismiss()
 
         })
 

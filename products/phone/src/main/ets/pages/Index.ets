@@ -1,6 +1,7 @@
 import { ZRouter } from '@hzw/zrouter';
 import { CommonConst, NavName } from 'utils';
 import { OhosSmartDialog } from 'ohos_smart_dialog';
+import { loadingView } from 'uicomponents';
 
 /**
  * Author:J
@@ -28,7 +29,7 @@ struct Index {
       .height(CommonConst.FULL_PARENT)
 
       // here dialog init
-      OhosSmartDialog({ loadingBuilder: customLoading })
+      OhosSmartDialog({ loadingBuilder: loadingView })
 
     }.width(CommonConst.FULL_PARENT)
     .height(CommonConst.FULL_PARENT)
@@ -41,22 +42,3 @@ struct Index {
   }
 }
 
-/** 自定义页面弹窗 */
-@Builder
-function customLoading(args: ResourceStr = '正在加载中...') {
-  Column() {
-    Image($r('app.media.loading_refresh')).width(50).height(50)
-    Text(args)
-      .fontSize(11)
-      .fontColor($r('app.color.color_222222'))
-      .margin({ top: 11 })
-      .maxLines(1)
-      .textOverflow({ overflow: TextOverflow.Ellipsis })
-
-  }
-  .width(120)
-  .height(120)
-  .justifyContent(FlexAlign.Center)
-  .backgroundColor(Color.White)
-  .borderRadius(12)
-}
