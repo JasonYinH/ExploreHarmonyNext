@@ -1,7 +1,7 @@
 import { Route } from '@hzw/zrouter';
 import json from '@ohos.util.json';
 import { PhoneService } from '../service/PhoneService';
-import { ToastUtil } from '@yunkss/ef_ui';
+import { ToastUtil } from '@pura/harmony-utils';
 import { OhosSmartDialog, SmartDialog } from 'ohos_smart_dialog';
 import { loadingNetView } from 'uicomponents';
 

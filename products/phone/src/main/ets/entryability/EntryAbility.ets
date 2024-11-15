@@ -6,6 +6,7 @@ import BuildProfile from 'BuildProfile';
 import { ResponseInterceptor } from 'network';
 import { efRcp } from '@yunkss/ef_rcp';
 import { loadingNetView } from 'uicomponents';
+import { AppUtil } from '@pura/harmony-utils';
 
 export default class EntryAbility extends UIAbility {
   onCreate(want: Want, launchParam: AbilityConstant.LaunchParam): void {
@@ -15,6 +16,8 @@ export default class EntryAbility extends UIAbility {
       config.isLoggingEnabled = BuildProfile.DEBUG
       config.isHSPModuleDependent = false
     })
+
+    AppUtil.init(this.context);
   }
 
   onDestroy(): void {
@@ -60,24 +63,24 @@ export default class EntryAbility extends UIAbility {
     efRcp
       .setBaseURL("https://www.wanandroid.com")//设置请求路径
       .enableLogInterceptor()//设置为false即可关闭
-      // .setLoadingContent('正在加载中...')//更改loading文本
-      // .disableLoading()
-      // .setTimeOut({
-      //   transferMs: 1000
-      // })//设置超时
+        // .setLoadingContent('正在加载中...')//更改loading文本
+        // .disableLoading()
+        // .setTimeOut({
+        //   transferMs: 1000
+        // })//设置超时
       .convertError(true)//表示如果response.toJSON()异常时将响应字符串返回,false则表示值返回异常提醒而不返回结果
       .addCommonHeaders({//设置公共头
-        "version": `V1.0.0`
+        // "version": `V1.0.0`
       })//设置自定义loading样式和内容
       .setLoadingBuilder(wrapBuilder(loadingNetView))
       .addCustomInterceptors([new ResponseInterceptor()])
       .addSysCodeEvent({//添加统一系统框架级别编码处理逻辑,如超时等
         listener: (code: number) => {
-          console.log('---------addSysCodeEvent监听事件-----' + code)
+          // console.log('---------addSysCodeEvent监听事件-----' + code)
           switch (code) {
             case -1001:
             case 401:
-              console.log(`xxx ： ---跳转登录页面，清空一些数据等`)
+              // console.log(`xxx ： ---跳转登录页面，清空一些数据等`)
               //跳转登录页面，清空一些数据等
               // ZRouter.replacePathByName('LoginPage')
               break;

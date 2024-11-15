@@ -139,6 +139,10 @@
     {
       "name": "color_FF222222",
       "value": "#FF222222"
+    },
+    {
+      "name": "color_9C9C9C",
+      "value": "#9C9C9C"
     }
   ]
 }

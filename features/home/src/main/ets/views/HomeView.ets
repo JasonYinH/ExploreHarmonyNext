@@ -1,5 +1,4 @@
-import { Route } from "@hzw/zrouter"
-import { NavName } from "utils"
+import { CommonConst } from 'utils'
 
 @Preview
 @ComponentV2
@@ -10,10 +9,13 @@ export struct HomeView {
   }
 
   build() {
-    NavDestination(){
+    NavDestination() {
       Column() {
         Text('HomeView')
       }
+      .width(CommonConst.FULL_PARENT)
+      .height(CommonConst.FULL_PARENT)
+      .justifyContent(FlexAlign.Center)
     }
 
   }

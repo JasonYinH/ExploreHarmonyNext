@@ -1,4 +1,5 @@
 import { Route, ZRouter } from "@hzw/zrouter"
+import { AppUtil, ToastUtil } from "@pura/harmony-utils"
 import { HomeView } from "home"
 import { MineView } from "mine"
 import { QuestionView } from "question"
@@ -11,6 +12,9 @@ import { tabBarModel } from "../model/MainModel"
  * Author:J
  * Describe: 主页
  */
+// 定义一个状态变量来记录上次点击返回键的时间
+let lastBackPressedTime = 0
+
 @Preview
 @ComponentV2
 @Route({ name: NavName.MAIN_PAGE })
@@ -19,11 +23,13 @@ export struct MainPage {
   @Local msgCount: number = 9 // 消息数量
   //存储页面状态
   @Local tabContentArr: boolean[] = [true, false, false, false]
+
   aboutToAppear(): void {
     console.log(`xxx ： ---` + 'MainPage')
     console.log(`xxx获取参数 ： ---` + ZRouter.getInstance().getParamByName(NavName.MAIN_PAGE))
 
   }
+
   build() {
     NavDestination() {
       Stack() {
@@ -45,7 +51,23 @@ export struct MainPage {
         })
       }.width(CommonConst.FULL_PARENT)
       .height(CommonConst.FULL_PARENT)
-    }
+    }.hideTitleBar(true)
+    .width(CommonConst.FULL_PARENT)
+    .height(CommonConst.FULL_PARENT)
+    .onBackPressed(() => {
+      const currentTime = new Date().getTime()
+      const timeDifference = currentTime - lastBackPressedTime
+      if (timeDifference < 2000) { // 2秒内再次点击
+        //退出应用
+        AppUtil.exit()
+      } else {
+        // 提示用户
+        ToastUtil.showToast('再按一次退出应用')
+        lastBackPressedTime = currentTime
+      }
+
+      return true
+    })
 
   }
 

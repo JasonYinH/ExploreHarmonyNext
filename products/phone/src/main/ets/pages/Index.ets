@@ -14,14 +14,10 @@ struct Index {
     Stack() {
       // 获取NavPathStack实例对象
       Navigation(ZRouter.getNavStack()) {
-
       }
       .onAppear(() => {
-        // 跳转到登录页面
-        // ZRouter.getInstance().navigation(NavName.LOGIN_VIEW)
-        // todo 测试
-        ZRouter.getInstance().navigation('TestNetView')
-
+        // 跳转启页面
+        ZRouter.getInstance().navigation(NavName.SPLASH_PAGE)
       })
       .hideTitleBar(true)
       .mode(NavigationMode.Stack)

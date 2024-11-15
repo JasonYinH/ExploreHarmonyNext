@@ -1,5 +1,5 @@
 import { rcp } from '@kit.RemoteCommunicationKit';
-import { ToastUtil } from '@yunkss/ef_ui';
+import { ToastUtil } from '@pura/harmony-utils';
 import { BaseResponse } from '../model/BaseResponse';
 
 /**
