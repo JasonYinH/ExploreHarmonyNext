@@ -50,7 +50,7 @@
 - 新建APP命名规则：case/APP名字。
 - 目前分支：
  ```
-  |---case/wanandroid    打造鸿蒙版玩安卓APP
+  |---case/wanandroid    打造鸿蒙版玩安卓APP，参考项目：https://github.com/goweii/WanAndroid
   |---case/
 
  ```
