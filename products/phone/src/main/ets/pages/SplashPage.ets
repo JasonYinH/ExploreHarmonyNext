@@ -12,9 +12,9 @@ import { CommonConst, NavName } from "utils";
 export struct SplashPage {
   aboutToAppear(): void {
     // 跳转到主页面
-    ZRouter.getInstance().navigation(NavName.MAIN_PAGE)
+    // ZRouter.getInstance().navigation(NavName.MAIN_PAGE)
     // 跳转到登录页面
-    // ZRouter.getInstance().navigation(NavName.LOGIN_VIEW)
+    ZRouter.getInstance().navigation(NavName.LOGIN_VIEW)
     // todo 测试
     // ZRouter.getInstance().navigation('TestNetView')
 
