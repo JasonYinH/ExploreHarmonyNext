@@ -46,11 +46,12 @@
 ![img.png](pic/img.png)
 
 ## 后期迭代各种APP分支规则,(全是仿照)
-- 基于 master分支开发，新建APP命名规则：case_APP名字。
+- 基于 master分支开发，APP都在**case**分支下
+- 新建APP命名规则：case/APP名字。
 - 目前分支：
  ```
-  |---case_wanandroid    打造鸿蒙版玩安卓APP
-  |---case_
+  |---case/wanandroid    打造鸿蒙版玩安卓APP
+  |---case/
 
  ```
 
