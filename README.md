@@ -45,6 +45,15 @@
 
 ![img.png](pic/img.png)
 
+## 后期迭代各种APP分支规则,(全是仿照)
+- 基于 master分支开发，新建APP命名规则：case_APP名字。
+- 目前分支：
+ ```
+  |---case_wanandroid    打造鸿蒙版玩安卓APP
+  |---case_
+
+ ```
+
 ## 开源协议
 
 本项目基于 [Apache License](https://gitee.com/jiaojiaoone/explore-harmony-next/blob/master/LICENSE.txt) ，请自由地享受和参与开源。
