@@ -3,7 +3,6 @@ import { CommonConst, NavName, PreferencesConst } from 'utils'
 import { JSONUtil, PreferencesUtil, ToastUtil } from '@pura/harmony-utils'
 import { SwitchLoginTypeComp } from '../components/SwitchLoginTypeComp'
 import { LoginService } from '../service/LoginService'
-import json from '@ohos.util.json'
 import { UserLoginBean } from 'utils/src/main/ets/data/bean/UserLoginBean'
 
 @Preview
@@ -89,7 +88,12 @@ export struct LoginView {
         })
 
       Column({ space: 7 }) {
-        Image($r('app.media.startIcon')).width(100).height(100)
+        Stack({alignContent:Alignment.Start}){
+          Image($r('app.media.startIcon')).width(100).height(100)
+          // 后期使用动画实现眼睛一眨一闭
+          // Divider().width(10).height(10).borderRadius(5).backgroundColor(Color.Black).margin({top:16,left:23})
+        }
+
         Text('欢迎使用').fontSize(22).fontColor($r('app.color.white')).fontWeight(FontWeight.Bold)
         Text('本APP由JasonYin独立开发').fontSize(12).fontColor($r('app.color.white'))
       }.margin({ top: 44 })
