@@ -143,6 +143,14 @@
     {
       "name": "color_9C9C9C",
       "value": "#9C9C9C"
+    },
+    {
+      "name": "color_11FFFFFF",
+      "value": "#11FFFFFF"
+    },
+    {
+      "name": "colorOnMainOrSurface",
+      "value": "#B3FFFFFF"
     }
   ]
 }

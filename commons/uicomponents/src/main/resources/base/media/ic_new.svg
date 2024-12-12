@@ -1,0 +1,34 @@
+<svg id="vector"
+     xmlns="http://www.w3.org/2000/svg"
+     width="29"
+     height="14"
+     viewBox="0 0 29 14">
+  <path
+    fill="#E65441"
+    d="M8,0L22,0C25.866,-0 29,3.134 29,7C29,10.866 25.866,14 22,14L0,14L0,14L0,8C-0,3.582 3.582,0 8,0Z"
+    stroke-width="1"
+    fill-rule="evenodd"
+    stroke="#00000000"
+    id="path_0"/>
+  <path
+    fill="#FFFFFF"
+    d="M5.63,3.97l0.99,0l3.285,4.779l0.036,0l0,-4.779l0.981,0l0,6.426l-0.954,0l-3.321,-4.833l-0.036,0l0,4.833l-0.981,0z"
+    stroke-width="1"
+    fill-rule="nonzero"
+    stroke="#00000000"
+    id="path_1"/>
+  <path
+    fill="#FFFFFF"
+    d="M12.191,3.97l4.617,0l0,0.837l-3.636,0l0,1.872l3.42,0l0,0.837l-3.42,0l0,2.043l3.789,0l0,0.837l-4.77,0z"
+    stroke-width="1"
+    fill-rule="nonzero"
+    stroke="#00000000"
+    id="path_2"/>
+  <path
+    fill="#FFFFFF"
+    d="M17.375,3.97l1.107,0l1.251,5.004l0.036,0l1.314,-5.004l1.026,0l1.314,5.004l0.036,0l1.251,-5.004l1.107,0l-1.854,6.426l-1.044,0l-1.305,-4.959l-0.036,0l-1.305,4.959l-1.053,0z"
+    stroke-width="1"
+    fill-rule="nonzero"
+    stroke="#00000000"
+    id="path_3"/>
+</svg>

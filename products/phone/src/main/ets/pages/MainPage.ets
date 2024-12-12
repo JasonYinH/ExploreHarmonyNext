@@ -7,6 +7,7 @@ import { SchemeView } from "scheme"
 import { TabModel } from "uicomponents"
 import { CommonConst, NavName } from "utils"
 import { tabBarModel } from "../model/MainModel"
+import { TestTabBarView } from "../test/TestTabBarView"
 
 /**
  * Author:J
@@ -75,7 +76,10 @@ export struct MainPage {
   tabContentBuilder(item: TabModel) {
     if (item.index == 0) {
       // 首页
-      HomeView()
+      // HomeView()
+      // TODO 测试功能页面
+      TestTabBarView()
+
     } else if (item.index == 1) {
       // 问答
       QuestionView()
