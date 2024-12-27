@@ -1,0 +1,29 @@
+{
+  "routerMap": [
+    {
+      "name": "mainPage",
+      "pageSourceFile": "src/main/ets/_generated/ZRMainPage.ets",
+      "buildFunction": "phoneMainPageBuilder",
+      "data": {
+        "needLogin": "false"
+      }
+    },
+    {
+      "name": "splashPage",
+      "pageSourceFile": "src/main/ets/_generated/ZRSplashPage.ets",
+      "buildFunction": "phoneSplashPageBuilder",
+      "data": {
+        "needLogin": "false"
+      }
+    },
+    {
+      "name": "TestNetView",
+      "pageSourceFile": "src/main/ets/_generated/ZRTestNetView.ets",
+      "buildFunction": "phoneTestNetViewBuilder",
+      "data": {
+        "description": "网络页",
+        "needLogin": "false"
+      }
+    }
+  ]
+}
