@@ -6,7 +6,6 @@
       "default",
       "tablet",
       "2in1"
-    ],
-    "routerMap": "$profile:route_map"
+    ]
   }
 }

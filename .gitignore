@@ -20,4 +20,4 @@ _generated
 # file 不需要提交的文件
 local.properties
 oh-package-lock.json5
-route_map.json
+#route_map.json

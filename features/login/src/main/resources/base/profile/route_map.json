@@ -1,0 +1,13 @@
+{
+  "routerMap": [
+    {
+      "name": "loginView",
+      "pageSourceFile": "src/main/ets/_generated/ZRLoginView.ets",
+      "buildFunction": "loginLoginViewBuilder",
+      "data": {
+        "description": "登录/注册页",
+        "needLogin": "false"
+      }
+    }
+  ]
+}

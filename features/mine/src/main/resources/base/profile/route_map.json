@@ -1,0 +1,13 @@
+{
+  "routerMap": [
+    {
+      "name": "mineSettingView",
+      "pageSourceFile": "src/main/ets/_generated/ZRMineSettingView.ets",
+      "buildFunction": "mineMineSettingViewBuilder",
+      "data": {
+        "description": "我的设置页面",
+        "needLogin": "false"
+      }
+    }
+  ]
+}
